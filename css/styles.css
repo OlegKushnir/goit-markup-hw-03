@@ -8,16 +8,39 @@
     --sort-bgr-btn:#F5F4FA;
 }
 body {
+    margin: 0px;
     font-family:Roboto, sans-serif;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background-color:#ffffff;
 }
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin: 0;
+
+}
 
 .list {
     list-style-type: none;
+    padding-inline-start: 0;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+header .container {
+    padding: 0;
+}
+footer .container {
+    padding: 60px 0px;
+}
+footer .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
 .logo{
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
@@ -72,30 +95,58 @@ footer .logo-studio{
 
 .hero {
     background-color:var(--dark-bgr);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
+
 .hero-title {
+    
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     color: var(--title-white-color);        
-    text-align: center;
+    
     line-height: 1.36;
     text-transform: uppercase;
 }
 
 .order-btn {
+    display: inline-block;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
     font-family: inherit;
     background-color: var(--accent-color);
     color:var(--title-white-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em; 
     cursor: pointer;
+    text-align: center;
+}
+
+.descr .container {
+    padding-bottom: 0;
+
+}
+.descr ul {
+    text-align: center;
+}
+.descr li {
+    display: inline-block;
+    width: 270px;
+    vertical-align: top;
+    text-align: left;
 }
 .hidden-descr {
     display: none;
 }
 .descr h3 {
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     color: var(--title-text-color);
@@ -105,24 +156,48 @@ footer .logo-studio{
     font-size: 14px;
     line-height: 1.71;
 }
+.samples {
+    vertical-align: top;
+    text-align: center;
+}
+.samples li {
+    display: inline-block;
+}
 .samples h2, .team h2 {
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     color: var(--title-text-color);
     text-align: center;
     line-height: 1.16;
 }
+.team {
+    background-color: var(--sort-bgr-btn);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    
+}
+.team li {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--title-white-color);
+    border-radius: 0px 0px 4px 4px;
 
-.team h3 {
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--title-text-color);
-    line-height: 1.18;
 }
+.team img, 
 .team p {
-    font-size: 16px;
-    line-height: 1.18;
+margin-bottom: 30px;
 }
+.team h3 {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 500;
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+}
+
 footer {
     background-color: var(--dark-bgr);
 }
@@ -148,8 +223,18 @@ footer {
     color: var(--accent-color);
 }
 
+.sort {
+    margin-bottom: 50px;
+}
+.sort li {
+    display: inline-block;
+}
 
 .sort button {
+    display: inherit;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
     font-family: inherit;
     background-color: var(--sort-bgr-btn);
     color:var(--title-text-color);
@@ -178,4 +263,7 @@ footer {
 .galary p {
     font-size: 16px;
     line-height: 1.87;
+}
+.galary li {
+    display: inline-block;
 }

@@ -8,7 +8,6 @@
     --sort-bgr-btn:#F5F4FA;
 }
 body {
-    margin: 0px;
     font-family:Roboto, sans-serif;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
@@ -27,15 +26,14 @@ h1, h2, h3, h4, h5, h6, ul, p {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 15px;
 }
 
 header .container {
-    padding: 0;
+    padding: 0 15px;
 }
 footer .container {
-    padding: 60px 0px;
+    padding: 60px 15px;
 }
 footer .logo {
     display: inline-block;
